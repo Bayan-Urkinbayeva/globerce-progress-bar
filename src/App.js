@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from 'react';
+import './App.scss';
+import Body from './components/Body';
+import Header from './components/Header';
 function App() {
+  const [isShow, setIsShow] = useState(1);
+
+  const handleClick1 = () => {
+    setIsShow(2)
+  }
+  const handleClick2 = () => {
+    setIsShow(1)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header isshow={isShow} click1={handleClick1} click2={handleClick2}  />
+      <Body isshow={isShow} />
     </div>
   );
 }

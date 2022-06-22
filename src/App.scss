@@ -1,0 +1,185 @@
+$primary-color: #4FCB7A;
+@mixin displayCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App {
+  text-align: center;
+  width: 70%;
+  /* background-color: aqua; */
+  height: 100vh;
+
+
+.header{
+  margin: 0 auto;
+  width: 90%;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+
+.title h1{
+  font-size: 35px;
+  text-align: left;
+  margin-left: 45px;
+  color: rgba(52, 69, 99, 0.87);
+}
+
+.tabs{
+  width: 90%;
+  margin: 0 auto;
+  /* background-color: brown; */
+  height: 40px;
+ 
+}
+
+.btn1, .btn2{
+  width: 50%;
+  height: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.b1{
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+}
+
+.b2{
+  background-color: $primary-color;
+  color: white;
+  border: 1px solid $primary-color;
+}
+
+.btn1 {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.btn2{
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+}
+.body{
+  margin: 0 auto;
+  /* background-color: #a52a2a; */
+  width: 90%;
+  display: flex;
+  height: auto;
+  /* margin-top: 150px; */
+
+
+.blocks{
+  width: 35%;
+  /* background-color: chartreuse; */
+  height: auto;
+}
+
+.block{
+  width: 100%;
+  height: 150px;
+  /* background-color: violet; */
+}
+
+.block h4{
+  color: rgba(52, 69, 99, 0.87);
+}
+
+.block p{
+  color: #6B778C;
+}
+
+.scroller{
+  width: 20%;
+  /* background-color: coral; */
+  @include displayCenter()
+}
+
+.progress-container{
+  width: 15px;
+  height: 95%;   
+  background-color: $primary-color;
+  border-radius: 10px;
+  background-color: #49C1721A;
+  /* background: $primary-color; */
+}
+
+.progress-bar {
+  height: 0%;
+  background: $primary-color;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.circles{
+  width: 50px;
+  height: 100%; 
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.progress-container-circle{
+  @include displayCenter();
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 2px solid $primary-color  ;
+  border-radius: 30px;
+  color: $primary-color;
+  font-size: 20px;
+  font-weight: 800;
+}
+}
+}
+
+@media screen and (max-width: 420px){
+  .App{
+    width: 100%;
+  .header{
+    width: 100%;
+    .title h1{
+      font-size: 27px;
+    }
+  }
+  .body{
+      max-width: 100%;
+      .block{
+        height: 200px;
+    }
+    .circles{
+        justify-content: space-between;
+    }
+    .progress-container{
+      height: 98%;
+  }
+  }
+}
+} 
+@media screen and (min-width: 481px) and (max-width: 821px) {
+  .App{
+    width: 100%;
+    .header{
+      width: 90%;
+      .title h1{
+        font-size: 32px;
+      }
+    }
+    .body{
+        max-width: 100%;
+        .block{
+          height: 200px;
+      }
+      .circles{
+          justify-content: space-around;
+      }
+      .progress-container{
+        height: 98%;
+    }
+    }
+  }
+}
+
