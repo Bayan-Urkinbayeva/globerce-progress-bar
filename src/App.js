@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.scss';
+import './styles/App.scss';
 import Body from './components/Body';
 import Header from './components/Header';
 function App() {
