@@ -4,7 +4,6 @@ import Body from './components/Body';
 import Header from './components/Header';
 function App() {
   const [isShow, setIsShow] = useState(1);
-
   const handleClick1 = () => {
     setIsShow(2)
   }
