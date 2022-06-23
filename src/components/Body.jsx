@@ -51,56 +51,11 @@ const Body = (props) => {
                 <div className="progress-container-circle">4</div>
                 <div className="progress-container-circle">5</div>
                 </div>
-               
             </div>
             {props.isshow ===1 ? 
             <Card data={data1} />
-            // <div className="blocks" >
-            //     <div className="block">
-            //         <h4>Заголовок 1</h4>
-            //         <p>Задача организации, в особенности же начало повседневной работы по формированию </p>
-            //     </div>
-            //     <div className="block">
-            //     <h4>Заголовок 2</h4>
-            //         <p>Задача организации, в особенности же начало повседневной работы по формированию </p>
-            //     </div>
-            //     <div className="block">
-            //     <h4>Заголовок 3</h4>
-            //         <p>Задача организации, в особенности же начало повседневной работы по формированию </p>
-            //     </div>
-            //     <div className="block">
-            //     <h4>Заголовок 4</h4>
-            //         <p>Задача организации, в особенности же начало повседневной работы по формированию </p>
-            //     </div>
-            //     <div className="block">
-            //     <h4>Заголовок 5</h4>
-            //         <p>Задача организации, в особенности же начало повседневной работы по формированию </p>
-            //     </div>
-            // </div>
             :
             <Card data={data2} />
-        //     <div className="blocks" >
-        //     <div className="block">
-        //         <h4>Заголовок 1</h4>
-        //         <p>Another Content</p>
-        //     </div>
-        //     <div className="block">
-        //     <h4>Заголовок 2</h4>
-        //         <p>Another Content</p>
-        //     </div>
-        //     <div className="block">
-        //     <h4>Заголовок 3</h4>
-        //         <p>Another Content</p>
-        //     </div>
-        //     <div className="block">
-        //     <h4>Заголовок 4</h4>
-        //         <p>Another Content</p>
-        //     </div>
-        //     <div className="block">
-        //     <h4>Заголовок 5</h4>
-        //         <p>Another Content</p>
-        //     </div>
-        // </div>
 }
         </div>
      );
