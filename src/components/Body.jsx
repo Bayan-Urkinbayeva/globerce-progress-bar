@@ -18,7 +18,6 @@ const Body = (props) => {
         ]
 
     window.onscroll = () => {
-        
         let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         let scrolled = (winScroll / height) * 100;
@@ -46,9 +45,9 @@ const Body = (props) => {
         <div className="body">
             <ProgressBar circles={data1} />
             {props.isshow ===1 ? 
-            <Card data={data1} />
+            <Card datas={data1} />
             :
-            <Card data={data2} />
+            <Card datas={data2} />
 }
         </div>
      );
